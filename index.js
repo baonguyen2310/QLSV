@@ -20,7 +20,7 @@ const connection = mysql.createConnection({
 // git: lich su code
 
 // create the myBatisMapper from xml file
-mybatisMapper.createMapper([ './fruits.xml' ]);
+mybatisMapper.createMapper([ './students.xml' ]);
 
 // SQL Parameters
 var param = {
