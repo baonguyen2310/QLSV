@@ -29,16 +29,6 @@ const studentModel = mongoose.model('student', {
 
 var app = express();
 
-app.get('/test', function(req, res){
-    res.send('Test OK');
-});
-
-// app.get('/students', async function(req, res) {
-//     const students = await studentModel.find({});
-//     console.log(students);
-//     res.json(students);
-// })
-
 app.get('/students', async function(req, res) {
     //const minAge = req.query.minAge;
     const student = await studentModel.findOneAndUpdate(

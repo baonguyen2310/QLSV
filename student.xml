@@ -9,4 +9,14 @@
     FROM
       students
   </select>
+  <select id="getStudentsByName">
+    SELECT
+      name,
+      age,
+      address
+    FROM
+      students
+    WHERE
+      name = #{name}
+  </select>
 </mapper>
