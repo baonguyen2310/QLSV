@@ -5,7 +5,7 @@ const mybatisMapper = require('mybatis-mapper');
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  database: 'test'
+  database: 'QLSV'
 });
 
 // dev: moi truong phat trien
