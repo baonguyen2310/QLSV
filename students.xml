@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="students">  
+  <select id="read-students">
+    SELECT * FROM students
+  </select>
+  <insert id="create-student">
+    INSERT INTO students (_id, name, age, address)
+    VALUES (#{_id}, #{name}, #{age}, #{address})
+  </insert>
+   <update id="update-student-by-id">
+    UPDATE students 
+    SET name = #{name}, age = #{age}, address = #{address}
+    WHERE _id = #{_id}
+  </update>
+  <delete id="delete-student-by-id">
+    DELETE FROM students WHERE _id = #{_id}
+  </delete>
+</mapper>
